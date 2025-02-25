@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        
+        types of loops
+        for 
+        while loop 
+        do while loop
+
+        break - terminate the loop 
+        continue - skip the current iteration
+
+        nested loop - loop inside a loop
+        mainloop- inner loop - innerloop- mainloop
+
+        for in  - it is used to iterate 
+                  strings , objects and arrays
+
+
+        strings -indexes
+        let a="hello world";
+for( i in a){
+    console.log(i)
+}
+
+  strings-values 
+
+
+for( i in a){
+    console.log(a[i])
+}
+
+array - indexes
+for( i in a){
+    console.log(i)
+}
+
+
+array-values
+for( i in a){
+    console.log(a[i])
+}
+
+objects
+        let a={
+            name:"john",
+            age:25
+        }
+            keys
+
+        for(i in a){
+            console.log(i)
+        }
+
+        values
+         for(i in a){
+            console.log(a[i])
+        }
+
+
+        for of
+
+        a="hello"
+        for(i of a){
+        console.log(i)/values
+        }
+
+        let arr=["htm;", "css"]
+        for(i of arr){
+        console.log(i)//html css
+        }
+
+         let a={
+        name:"john",
+        age:25
+       }
+
+       for( i of a){
+       console.log(i)//a is not iterable
+       }
+
+
+        
+
+       let obj={
+        name:"john",
+        age:25
+    }
+    //keys
+    for(i of Object.keys(obj)){
+        console.log(i);
+    }
+    //values
+       for(i of Object.keys(obj)){
+        console.log(obj[i]);
+    }
+
+    //values
+    for(i of Object.values(obj)){
+        console.log(i);
+    }
+    
+    // values and keys
+    for([i,j] of Object.entries(obj)){
+        console.log(i,j)
+    }
+
+
+    
+    
+    
+    //    console.log(Object.values(a))
+    
+    //    for(i of a){
+        //     console.log(i)
+        //    }
+        
+        */
+
+        // let num=123456789;
+        // let str=String(num)
+        // sum=0;
+
+        // for(i in str){
+        //     sum+=Number(str[i])
+        // }
+        // console.log(sum)
+
+
+        /*
+        
+        2 
+        3
+        4 -- 2
+        5
+        6 -- 2,3
+        7
+        8 -- 2,4
+        9 -- 3
+        10 -- 2,5
+        
+        */ 
+
+        // let num=11;
+        // flag=true;
+        // for(i=2;i<num;i++){
+        //     if(num%i==0){
+        //         console.log(num,i, "not a prime" )
+        //         flag=false;
+        //         break
+        //     }
+        // }
+
+        // if(flag){
+        //     console.log(num, "is prime")
+        // }
+
+
+        // find a min number in a string
+        // debugger;
+        var str="98356";
+        var min=str[0]
+
+        for(i of str){
+            if(i<min){
+                min=i
+            }
+        }
+        
+        console.log(min)
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
