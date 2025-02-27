@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sum(1)">1</button>
+    <button onclick="sum(2)">click</button>
+    <button onclick="sum(3)">click</button>
+    <script>
+
+        /*
+        for in  - index str  , arrays, objects(keys) -index-values
+        for of  - values - str , arrays, Object.values(obj) , keys , entries
+
+        functions
+        functions are reusable piece of code that is used 
+        to perform a specific task when something invokes it 
+
+        function is defined with function keyword followed by
+        function name followed by parenthesis()
+        parenthesis may include parameters 
+        followed by {
+        //block of code 
+        }
+
+        
+
+
+        function declaraion
+        function hello(parameters){
+        //block of code
+        }
+
+        function invoking or calling
+        functionname()
+        hello(arguments)
+
+        points need to be noted
+        1) function name stores funciton definition 
+        2) logging off the function calling prints
+         the return value
+        3) statements after return will not executie ,
+         it was in void
+        4) named functions can only be hoisted
+        5) function definition can act as a value because in
+        js functions are called first class functions
+
+
+
+        
+    // console.log(hello)//function declartion
+    // hello()//code execution
+    // console.log(hello())// code execution and return value
+
+        
+        */
+    //    function hello(){
+    //     console.log("hello world")
+    //    }
+
+    //    hello()
+    //    hello()
+    //    hello()
+
+    
+    // function sum(a,b){
+    //     console.log(a)
+    // }
+    // sum(1,2)
+    // sum(3,4)
+    // sum()
+
+
+    // function sum(a){
+    
+    //     console.log(a)
+    // }
+    // sum(1)
+
+    let a=function (){
+        console.log("hello world")
+        return "hi"
+        console.log("how r u")
+    }
+
+    console.log(a())
+
+    let str="1,2,3,4,6".split(",")
+    console.log(str)
+    
+    
+
+   
+
+
+    // console.log(hello)//function declartion
+    // hello()//code execution
+    // console.log(hello())// code execution and return value
+
+    // a=5
+    // b=10
+    // function sum(){
+    //     return a+b
+    // }
+
+    // function div(){
+    //     return a/b
+    // }
+    // console.log(sum()+div())
+
+
+    </script>
+    
+</body>
+</html>
