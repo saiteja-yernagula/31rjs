@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        functions - are reusable blocks of code that can be
+        used to perform a particulr task when something calls or invokes it
+
+        function declartion
+
+        function calling
+
+        function - points
+        function name stores fun defintion
+        logging of function calling prints the return value
+        statement after return will not execute
+        named functions can only be hoisted
+        function in js is called first class functions- 
+        can be act as a vlue
+
+
+        types of functions
+        named function
+        anonymous function - a function defined without
+                          a funciton name
+
+                          var a=function(){
+                              console.log("hello");
+                           }
+                           a()
+                           // console.log(a)
+                           // a()
+                           // console.log(a());
+
+        arrow function 
+        it is more concise way of writing a function
+        in simple syntax
+
+        let a=(val,val1 ,val3)=>{
+        console.log(val)
+        }
+
+        let a=val=>console.log(val)
+
+        let a=val=>val
+        
+
+        
+        let a=val=>val
+        
+     //    a("hello js")
+        console.log(a("hello js"));
+        //default parameters
+        function sum(a="dear"){
+            return "hello "+a
+        }
+ 
+        console.log(sum("john"))
+        console.log(sum())
+
+
+
+        self invoking function - immediate invoking 
+                                 functio expression (iife)
+        (defintion)()
+
+
+        (function(){
+                console.log("hello world")
+            }
+        )()
+
+        callback function
+        callback function is 
+        when a function definition is passed to another function
+        as a argument , executed later in the outer funciton
+
+        learning html
+        learning css
+        leranin js
+
+        */
+
+        // function order(c){
+        //     console.log("order placed")
+        //     c()
+        // }
+        // function delivery() {
+        //     console.log("products delivered")
+            
+        // }
+        // function payment(b){
+        //     console.log("payment done")
+        //     b(delivery)
+        // }
+        // function addtocart(a){
+        //     console.log("products are added");
+        //     a(order)
+        // }
+        // addtocart(payment)
+
+        // function html(a){
+        //     console.log("learning html");
+        //     a(js)
+            
+        // }
+
+        // function css(b){
+        //     console.log("learning css");
+        //     b()
+        // }
+
+
+        // function js(){
+        //     console.log("learning js");
+        // }
+
+        // html(css)
+
+        // higher order function- it is function which is taking
+        // one or more function as an arguments
+
+        // css(js)
+        // higherorderfuncitn(callbackfunction)
+
+
+        /*
+        var let const
+        redeclartion
+        var a=10
+        var a=10
+
+        assignment
+        var a;
+        a=10;
+
+        reassignment
+        a=20
+        a=30
+
+        initilization
+        var a=10
+        
+
+        hoisting
+        console.log(a)
+        var a=10
+
+        scoping
+
+
+
+
+        var 
+        redeclartion allowed
+        assignment allowed
+        hositing allowed
+        var have global scope ,local scope
+
+        let
+        redeclariion not allowed
+        assignment allowed
+        reassignment allowed
+        hoisting not allowed - it was in tdz
+        let have global scope, block scope, local scope
+
+        const
+        redeclaration not allowed
+        assignment not allowed must be inititiliazed with value
+        hoisting not allowed - it was in tdz
+        const have global scope, block scope, local scope
+
+
+
+        scopes -  scope is a life or accessibility of an 
+        variable
+        global scope
+        block scope
+        local scope - function scope
+    
+
+    
+
+        
+        */ 
+
+    //    debugger;
+    //    console.log(a)
+    //    const a=20
+
+    // debugger;
+    // var a=10;
+    // let b=20;
+    // const c=30;
+
+    // debugger;
+    // {
+    //     var a=10;
+    //     let b=20;
+    //     const c=30;
+    // }
+    // console.log(c)
+
+
+    function hello(){
+        var a=10;
+        let b=20;
+        console.log(a)
+    }
+    hello()//10
+    console.log(a)//
+    console.log(b)//
+
+
+
+
+    
+    
+
+
+
+       
+
+
+        
+    </script>
+</body>
+</html>
