@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="el">heading 1</h1>
+    <h1 class="el">heading 2</h1>
+    <h2 class="el">secondary level heading 1</h2>
+    <h2 id="elementmain">secondary level heading 2</h2>
+
+
+    <script>
+        /*
+
+        types of functions 
+        named functions
+        arrow function
+        anonymous function
+        iife - self invoking funciton
+        callback function
+        higher order function
+
+        scopes- a life or accesibilit of  an  variable 
+        1. global scope - var let const
+        2. local scope - fucntion scope- var let const
+        3. block scope - {}- let const
+
+        differences
+        var- can be redeclared, reassinged , hoisted -old browser
+        let  - cannot be redeclared, can be reassigne, not hoisted but because tdz
+        const- cannont be redeclared , reassign, hoisted
+
+
+        global execution context
+        local
+
+        function execution context
+
+        closures
+        when a inner fucntion having a access to the variale
+        which is declared in outer funciton even after execution
+
+        scope chaining
+
+
+        */ 
+
+        // var a=10
+
+        // function parent(){
+        //     var a=20
+        //     {
+        //         var a=30;
+        //         console.log(a)
+        //     }
+          
+        // }
+
+        // parent()
+
+
+        /*
+        dom - document object model
+       1)  DOM is a standard object model that allows programs and
+         scripts to dynamically access and 
+        update the content, structure, and style of a document
+        2) it connects webpages to the scripts
+        3) dom represent a document as a tree-like structure
+        4) dom have methods( accessing) and properties(manipulating)
+
+        dom - objects
+        1) document level object- field names
+        2) element level object
+        
+        console.log(document)- print the whole doc
+
+
+        dom methods - for accesing html elements
+        1) document.getElementsByTagName("h1") - comes in collection 
+               and can be accesed by indexing
+        2) document.getElementsByClassName("el")-comes in collection 
+               and can be accesed by indexing
+        3) document.getElementById("elementmain")- returns unique element
+        4) document.querySelector("#elementmain")- return the first element 
+                                      can be tag, .class , #id
+         5) document.querySelectorAll("h1")- comes in collection
+                                     can be tag ,.class , #id
+
+        how to add styling (properties)
+
+        method.style.property="value"
+        */ 
+
+        var firsthead=document.getElementsByTagName('h1')[0]
+        var secondhead=document.getElementsByTagName('h1')[1]
+        firsthead.style.color="red";
+        secondhead.style.color="green";
+
+        console.log(firsthead)
+        console.log(secondhead)
+
+        var lastel=document.getElementById('elementmain');
+        lastel.style.fontSize="10px"
+        console.log(lastel) 
+    </script>
+    
+</body>
+</html>
