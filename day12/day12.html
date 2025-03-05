@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .el{
+            color:white;
+            background: blue;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .hide{
+            display: none;
+        } */
+
+
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+      
+    </style>
+</head>
+<body>
+    <!-- <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1> -->
+
+
+
+    <!-- <div class="container">parent container</div>
+    <button onclick="hi()">actioon-show/hide</button> -->
+    <!-- <button onclick="sh()">show</button> -->
+
+  
+    <!-- <a href="html"></a>
+    <a href="css"></a>
+    <a href="js"></a>
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <form action="">
+        <input type="text">
+        <input type="password">
+        <input type="email">
+    </form>
+    <form action="">
+        <label for="">username</label>
+        <input type="text">
+    </form> -->
+    <script>
+        /*
+        how to access content- innerHTML, innerText, textContetn
+
+        how to modify
+        method.innerText='new content';
+        method.innerHTML='new content';
+
+        how to create an elemtn 
+        var a=document.createElement("h1")
+        var b=document.createElement("i")
+        b.innerText="heading";
+
+        how to append
+        a.append(b)
+        document.body.append(a)
+
+        append ;
+
+        appendChild;
+
+
+        element level object
+        document level objects- field names
+        document.body
+        document.head
+        document.title
+        document.scripts[0]
+        document.forms[0][0]
+        document.images[0]
+        document.links[0]
+
+
+        how to add an attribute
+        method.setAttribute("attributenae", "value");
+        img.setAttribute("src", "url")
+
+        a.setAttribute("type", "text")
+        a.setAttribute("placeholder", "enter ur name")
+
+        how to add and remove class names
+        element.classList.add("el1")
+        element.classList.add("el2")
+        element.classList.add("el3")
+
+        element.classList.remove("el3")
+        element.classList.toggle("el2")
+
+
+
+
+
+
+
+
+
+
+
+        
+        */
+    //    document.body.style.background="red";
+    // document.title="dom manipulations"
+    //     console.log(document.links)
+
+    // var el=document.querySelector("div");
+    // el.style.color="white";
+    // el.style.background="blue";
+    // el.style.fontSize="40px";
+    // el.style.fontFamily="Arial";
+
+    // var img=document.createElement("img");
+    // img.setAttribute("src", "https://th.bing.com/th/id/OIP.vcPu1cCeBgsdSNPBCjE4QwHaEK?rs=1&pid=ImgDetMain")
+    // console.log(img)
+    // document.body.appendChild(img)
+
+    // var el=document.createElement("div");
+    // el.innerText="contet";
+    // el.classList.add("el1")
+    // el.classList.add("el2")
+    // el.classList.add("el3")
+    // el.classList.remove("el3")
+   
+    // console.log(el)
+    // document.body.appendChild(el)
+
+
+    // var container=document.getElementsByClassName("container")[0];
+
+
+    // temp=true;
+    // function hi(){
+    //     container.classList.toggle("hide")
+    //     // if(temp){
+    //     //     container.classList.add("hide")
+    //     //     temp=false;
+    //     //     console.log(temp)
+    //     // }
+    //     // else{
+    //     //     container.classList.remove("hide")
+    //     //     temp=true
+    //     // }
+    // }
+
+    // var one=document.getElementsByTagName("h1")
+    // one[0].innerText+=" raviteja";
+    
+
+    // one[1].innerText+=" raviteja";
+    // one[2].innerText+=" raviteja";
+    // one[3].innerText+=" raviteja";
+
+//     let friends=["nandini", "vinneth", "mahesh","saiteja","pavan","nandini", "vinneth", "mahesh","saiteja","sunil","ravi"]
+//    for(i=0;i<one.length;i++){
+//     one[i].innerText+=" "+friends[i]
+//     // console.log(i)
+//    }
+
+
+
+   var container=document.createElement("div");
+   var title=["title", "title2", "title3",'title4', "title5","title6"]
+   var para=["para", "para2", "para3",'para4', "par5","para6"]
+
+   for(i=0;i<=5;i++){
+
+       var child=document.createElement("div");
+       var img=document.createElement("img")
+       
+       var h1=document.createElement("h1")
+       var p=document.createElement("p")
+
+   p.innerText=para[i]
+   h1.innerText=title[i];
+   img.src="https://th.bing.com/th/id/OIP.vcPu1cCeBgsdSNPBCjE4QwHaEK?rs=1&pid=ImgDetMain"
+   child.append(img,h1,p)
+   container.append(child)
+}
+   
+   
+   
+   document.body.append(container)
+
+   container.classList.add("parent")
+   console.log(container)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
