@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: blue;
+            color:white;
+        }
+        ul{
+            display: flex;
+            gap:2%;
+        }
+ 
+    </style>
+</head>
+<body>
+
+    <!-- <ul>
+        <li id="html">html</li>
+        <li id="css">css</li>
+        <li id="js">js</li>
+    </ul> -->
+    <script>
+        /*
+        dom- document object model
+       that is used to access and modify the 
+       content, structure and stylings
+
+       connects web pages to scripts
+
+       dom have methods(accessing) and properites(manipulating )
+
+       dom methods
+       1) document.getElementsByTagName("h1")
+       2) document.getElementsByClassName("container")
+       3) document.getElementByID("parent")
+       4) document.querySelector("#parent or .container or h1");
+       5) document.querySelectorAll("#parent or .container or h1");-collection
+
+       how to add styling
+       document.getElementById('demo').style.border="1px solid red";
+
+        
+       how to access content
+       console.log(method.innerText)
+       console.log(method.innerHTML)
+       console.log(method.textContent)
+
+       how to modify content
+           // html.innerText="python";
+        // css.innerHTML="<ul> <li>html</li> <li>css</li> <li>js</li></ul>"
+        // js.innerText="node js";
+
+
+        how to creat element dynamically
+        var element = document.createElement("header");
+
+        how to append element
+        mainelement.appendChild(childelement)
+        mainelement.append(childelement)
+
+
+        creat a resume using dom
+        
+        */ 
+
+        // let html=document.querySelector("#html")
+        // let css=document.querySelector("#css")
+        // let js=document.querySelector("#js")
+
+        // html.style.color="red"
+        // css.style.color="green"
+        // js.style.color="blue"
+        
+        // html.innerText="python";
+        // css.innerHTML="<ul> <li>html</li> <li>css</li> <li>js</li></ul>"
+        // js.innerText="node js";
+
+        // console.log(html.innerText)
+        // console.log(css.innerHTML)
+        // console.log(js.textContent)
+
+        var container=document.createElement("header");
+
+        var title=document.createElement("h1")
+        var nav=document.createElement("nav")
+        var body=document.querySelector("body");
+        console.log(body)
+
+        title.innerText="Brand name";
+        nav.innerHTML='<ul><li>about</li><li>services</li><li>contact</li></ul>'
+        // console.log(nav)
+        // console.log(title)
+        console.log(container)
+
+        container.append(title,nav)
+        // container.appendChild(nav)
+
+        body.appendChild(container)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
