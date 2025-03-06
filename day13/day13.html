@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form >
+        <label for="">username</label>
+        <input type="text" value="john" placeholder="enter ur username" id="username">
+        <label for="">email</label>
+        <input type="text" placeholder="enter ur email" id="email">
+        <button onclick="details()">get details</button>
+    </form>
+
+    <!-- <div>
+        html
+    </div>
+    <button onclick="fun()">
+        click me
+    </button> -->
+    <script>
+        /*
+
+        how to add an attribute
+
+        by using
+        method.setAttribute("attr name", "value")
+        method.getAttribute("attr name")
+
+        for class names
+        method.classList.add("classname")
+        method.classList.remove("classname")
+        method.classList.toggle("classname")
+
+        how to creat cards
+
+
+
+
+
+        
+       */ 
+    //    let arr=[ "red", "green", "blue", "black"];
+    //    count=1;
+    //    var div=document.querySelector("div");
+    //    div.innerHTML=arr[0];
+      
+    //    function fun(){
+    //     if(count==arr.length){
+    //         count=0
+    //     }
+        // var div=document.querySelector("div");
+        // div.innerHTML=arr[count];
+    //     document.body.style.background=arr[count]
+    //     count++
+    //    }
+
+    // event handlers and event listeners
+
+    // var btn=document.createElement("button");
+    // btn.innerText="click me";
+
+    // btn.addEventListener("click", clk)
+    // function clk(){
+    //     console.log("hello world")
+    // }
+
+    // btn.addEventListener("dblclick",function(){
+    //     alert('clicked two times')
+    // })
+
+    // btn.addEventListener("mouseout",clk)
+
+    // document.body.append(btn)
+    // console.log(btn)
+
+    /*
+
+    how to get form or input
+    1) by using methods- quer, id,tag
+    2) fields - document.forms[0]
+    3)
+    
+    */ 
+
+    // var userform=document.querySelector("form");
+    // var inp1=document.getElementById("username")
+    // var inp2=document.getElementById("email")
+    // console.log(userform,inp1,inp2)
+
+    //how to get a value from a text field
+    var inp=document.forms[0][0];
+    inp.value="jessy"
+    console.log(inp.value)
+
+
+   
+
+
+
+    function details(){
+        var user =document.forms[0];
+    console.log(user)
+    console.log(user[0].value)
+    console.log(user[1].value)
+    }
+
+    </script>
+</body>
+</html>
