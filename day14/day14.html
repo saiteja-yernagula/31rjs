@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" name="name" placeholder="Enter your password" id="inp1"><br>
+        <input type="text" name="mail" placeholder="re enter ur password" id="inp2"><br>
+        <button id="btn">click</button><br>
+        <span id="matched">password are matched</span> <br>
+        <span id="notmatched">password are not matched</span>
+        
+
+    </form>
+    <script>
+
+/*
+
+types of events
+mouse events
+keyboard events
+form events
+window events
+
+event handlers
+inline event - onclick
+dom event hand- by using addevent listener method
+
+method.addEventListener("type of event", ()=>{
+})
+
+method.addEventListener("type of event",greet)
+method.addEventListener("type of event",greet)
+
+forms
+how to access the input value
+1) inp1=document.forms[0][0].value
+ inp2=document.forms[0][1].value
+
+ 2) by using methods
+ inp1=document.getElementById("inp1").value
+ inp2=document.getElementById("inp2").value
+
+ 3) event.target[0]
+
+
+*/
+
+
+
+// var btn=document.forms[0][2]
+// btn.addEventListener("click",function (e){
+//     e.preventDefault()//used to prevent the default submisstion
+//     console.log(e.target)
+// //     var inp1=document.forms[0][0].value;
+// // console.log(inp1)
+// })
+
+// var form=document.querySelector("form");
+// form.addEventListener("submit",function(event){
+//     event.preventDefault()
+//     console.log(event.target[0].value)
+//     // console.log(event.target[1].value)
+//     event.target[0].value=""
+//     // event.target[1].value=""
+// })
+
+var form=document.forms[0];
+console.log(form)
+form.addEventListener("submit",function(e){
+e.preventDefault()
+
+if(e.target[0].value==e.target[1].value){
+    console.log("password is matched")
+    var match=document.getElementById("matched");
+    match.style.display="block";
+    match.style.color="green";
+    var notmatch=document.getElementById("notmatched");
+    notmatch.style.display="none";
+}
+else{
+    console.log("password is not matched")
+    var notmatch=document.getElementById("notmatched");
+    notmatch.style.display="block";
+    notmatch.style.color="red";
+
+    var match=document.getElementById("matched");
+    match.style.display="none";
+}
+
+e.target[0].value=""
+e.target[1].value=""
+
+})
+
+
+document.body.addEventListener("keydown",function(e){
+    console.log("key pressed")
+    console.log(e.key)
+    if(e.key=="Enter"){
+        document.body.style.background="red";
+    }
+})
+// onchange -- input
+
+
+    </script>
+</body>
+</html>
