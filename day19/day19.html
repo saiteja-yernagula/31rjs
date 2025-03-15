@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <span id="hours">00</span>:
+    <span id="mins">00</span>:<span id="secs">00</span>
+     -->
+
+     <input type="date" id="inp">
+     <button onclick="fun()">submit dob</button>
+    <script>
+
+        /*
+        
+        math methods and number methods
+        
+        date methods
+
+        how to create a date
+        let a =new Date();
+
+        //specific
+    year - a.getFullYear()
+    month- a.getMonth()
+    day - a.getDate()
+    weekday- a.getDay()
+
+time
+hours - a.getHours()
+minutes- a.getMinutes()
+seconds- a.getSeconds()
+seconds- a.getMilliSeconds()
+
+
+  local time - a.toLocaleTimeString()
+                a.toTimeString()
+                a.toDateString()
+                a.toLocaleDateString()
+
+set methods
+
+
+
+        
+        */ 
+    //    let a = new Date();
+    //    console.log(a.toDateString())
+    //    console.log(a.toLocaleDateString())
+
+        // function gettime(){
+            
+        // let present=new Date();
+        // console.log(present.getFullYear())
+
+        // let months=["jan", "feb", "march", "april"]
+
+
+        // console.log(months[present.getMonth()])
+        // console.log(present.getDate())
+        // console.log(present.getDay())
+
+        // console.log(present.getHours())
+        // console.log(present.getMinutes())
+        // console.log(present.getSeconds())
+        // console.log(present.getMilliseconds())
+
+        // console.log(present.toLocaleTimeString())
+        // console.log(present.toTimeString())
+
+        // document.body.innerText=present.toLocaleTimeString()
+
+        // }
+
+    
+        // setInterval(gettime, 1000)
+        // gettime()
+
+        // let a=new Date();
+
+        // a.setFullYear(2000)
+        // a.setMonth(0)
+        // a.setDate(1)
+        // a.setHours(13)
+        // a.setMinutes(15)
+        // a.setSeconds(10)
+        
+        // console.log(a)
+
+        // let present=new Date()
+        // console.log( present.getFullYear()-a.getFullYear())
+
+
+        function fun(){
+            let inp=document.querySelector("input").value
+            console.log(inp)
+
+            let olddate=new Date(inp)
+            console.log(olddate)
+
+            let newdate =new Date()
+            console.log(newdate)
+
+            let age= (newdate-olddate)/(1000*60*60*24)
+            console.log(Math.floor(age))
+
+        }
+    </script>
+</body>
+</html>
