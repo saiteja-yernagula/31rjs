@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">
+        click me
+    </button>
+    <button onclick="fun1()">
+        close
+    </button>
+
+    <h1>first page</h1>
+    <a href="second.html">click to route</a>
+    <script>
+        /*
+    
+        array iteration and transformation methods
+
+        browser object model
+        a set of objects provided by the browser to get
+        specific information
+
+        1. window object
+           window.alert("")
+           window.prompt("enter a num")
+           window.confirm('are you really want to exit')
+           if(window.confirm("are you sure")){
+            console.log("yes")
+           }
+           else{
+            console.log("no")
+           }
+           window.open("path","_blank","width=500,height=400")
+           window.close()
+
+                    function fun(){
+            let a=prompt("enter ur name")
+            window.open("https://en.wikipedia.org/wiki/HTML")
+         }
+         function fun1(){
+            if(window.confirm("are u really want to exit")){
+
+                window.close()
+            }
+         }
+
+            window.innerHeight
+            window.innerWidth
+            function fun(){
+               // let a=prompt("enter ur name")
+               window.open("https://en.wikipedia.org/wiki/HTML","_blank","height=400,width=500")
+            }
+            function fun1(){
+               if(window.confirm("are u really want to exit")){
+   
+                   window.close()
+               }
+            }
+   
+   
+            console.log(window.innerWidth)
+            console.log(window.innerHeight)
+   
+            if(window.innerWidth<=500){
+               document.body.style.background="red";
+            }
+
+            window.alert()
+            window.prompt("")
+            window.confirm("")
+            window.open()
+            window.close()
+            window.innerWidth
+            window.innerHeight
+
+
+    2. navigator objects
+      1 navigator.onLine
+      2 navigarot.geolocation
+        navigator.appName)
+        navigator.appVersion)
+        navigator.appCodeName)
+        navigator.platform)
+        navigator.product)
+
+      
+       if(navigator.onLine){
+        console.log('user is online')
+       }else{
+        console.log('user is offline')
+       }
+
+       if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+            console.log(position.coords.latitude)
+            console.log(position.coords.longitude)
+        })
+       }
+
+       location objects
+       
+    console.log(location.protocol)
+    console.log(location.href)
+    console.log(location.hostname)
+    console.log(location.pathname)
+
+
+
+    function fun(){
+        location.href="https://en.wikipedia.org/wiki/HTML"
+    }
+
+
+    history objects
+        history.forward()
+        history.back()
+        history.go(-2 or 3)
+
+        screen objects
+        screen.width
+        screen.height
+        screen.colorDepth
+        screen.pixedDepth
+
+
+        
+
+
+        */ 
+    //    console.log(navigator.onLine)
+
+    // console.log(navigator.appName)
+    // console.log(navigator.appVersion)
+    // console.log(navigator.appCodeName)
+    // console.log(navigator.platform)
+    // console.log(navigator.product)
+    // console.log(screen.width)
+
+
+
+    /*
+    
+    localstorage
+    store the data locally in the form of key value pairs
+
+
+    */ 
+
+    let user1="nandhini";
+
+   let user2="john";
+
+   let obj1={
+    name:user1,
+    age:21
+   }
+   let obj2={
+    name:user2,
+    age:22
+   }
+
+   localStorage.setItem("developer1",JSON.stringify(obj1))
+   localStorage.setItem("developer2",JSON.stringify(obj2))
+
+
+/*
+
+1. get the details and store in object
+2. add the object to the array by using push method
+3. sent the array to the localStorage  using JSON.stringify
+ and set item
+ 4. get the data from the localStorage using get item and JSON.parse()
+  it using JSON.parse
+  5. [obj1,obj2,obj3]- use map method to display the
+  details in cards format
+*/    
+    </script>
+</body>
+</html>

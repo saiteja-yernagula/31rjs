@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="user1">
+
+    </div>
+
+    <div id="user2">
+        
+    </div>
+    <script>
+
+        let data1= JSON.parse(localStorage.getItem("developer1"))
+        let data2=JSON.parse(localStorage.getItem("developer2"))
+        console.log(data1)
+        console.log(data2)
+
+        var user1=document.getElementById("user1")
+        var user2=document.getElementById("user2")
+        user1.innerText=data1.name
+        user2.innerText=data2.name
+    </script>
+   
+</body>
+</html>
