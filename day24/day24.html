@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #notification{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+
+    <div id="notification">
+        
+    </div>
+
+
+    <button onclick="show()">
+        show notification
+
+    </button>
+<!-- 
+    <form action="">
+        <input type="text" name="name" placeholder="Enter your name" id="inp1">
+        <input type="text" name="name" placeholder="Enter your mail" id="inp2">
+        <button >click</button>
+    </form> -->
+    <script>
+        /*
+        
+        browser object model
+
+        1. window objects - open,close,alert,prompt, confirm, innerHeight,innerWidh
+         2. navigator- geolocation,cookie,plugins,language,appname,appVersion
+         3. location- href,protocol,hostname,path
+         4. history- back,forward,go,go(-1),go(1),
+         5. screen- widht,height ,colordepth,pixeldepth
+         6. cookies
+
+         localstorage
+
+         localstorage.setItem("key", "value")
+         localstorage.getItem("key")
+
+         localstorage.setItem("key",JSON.stringify(obj) )
+         JSON.parse(localstorage.getItem("key"))
+        
+        
+        */ 
+
+// let formdetails= JSON.parse(localStorage.getItem("formdetails")) || []
+
+
+// let btn=document.querySelector("button")
+// btn.addEventListener("click",function(e){
+//     e.preventDefault()
+//     let inp1=document.querySelector("#inp1")
+//     let inp2=document.querySelector("#inp2")
+
+//     let obj={
+//         name:inp1.value,
+//         mail:inp2.value
+//     }
+
+//     formdetails.push(obj)
+//     console.log(formdetails)
+
+//     localStorage.setItem("formdetails", JSON.stringify(formdetails))
+//     inp1.value=""
+//     inp2.value=""
+
+// })
+
+/*
+json- javascript object notation
+*/ 
+
+/*
+
+
+timing functions
+1. setTimeOut(callbackfunction,time in milliseconds)
+2. setInterval(calbackfunction, time)
+3. clearTimeOut()
+4.clearInterval()
+*/ 
+
+// let a=setTimeout(function(){
+//     console.log("hello")
+//     console.log("hi")
+// },2000)
+
+// function stoptimer(){
+//     clearTimeout(a)
+
+// }
+// function show(){
+//     let notify=document.getElementById("notification")
+//     notify.style.display="block";
+//    setTimeout(function(){
+//     notify.style.display="none";
+
+
+//    },3000) 
+// }
+
+// const messages = ["Loading resources...", "Connecting to the server...", "Almost there...", "Done!"];
+
+// count=0
+// function show(){
+//     let notify=document.getElementById("notification")
+//     notify.innerText=messages[count]
+//     count++
+
+//    let a= setTimeout(show,1000)
+
+//    if(count>=messages.length){
+//     clearTimeout(a)
+//    }
+// }
+timer=10
+
+a=setInterval(function(){
+  notify=document.getElementById("notification")
+  notify.innerText="Time left: "+timer
+  timer--
+  if(timer<0){
+    clearInterval(a)
+  notify.innerText="Time up "
+
+  }
+
+},1000)
+
+
+
+    </script>
+    
+</body>
+</html>
