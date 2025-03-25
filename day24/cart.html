@@ -11,6 +11,42 @@
         let data=JSON.parse(localStorage.getItem("cards"))
         console.log(data)
 
+        let container=document.createElement("div")
+
+        data.forEach(val => {
+      let child=document.createElement("div")
+let childa=document.createElement("div")
+let childb=document.createElement("div")
+let btn=document.createElement("button")
+btn.innerText="remove";
+
+
+
+
+btn.style.background="red";
+btn.addEventListener("click",function(){
+    alert("product deleted")
+    localStorage.removeItem("cards")
+    
+
+})
+
+
+
+childa.innerText=val.id
+childb.innerText=val.title
+
+
+    
+
+    child.append(childa,childb,btn)
+    container.append(child)
+
+            
+        });
+document.body.append(container)
+
+
     </script>
 </body>
 </html>

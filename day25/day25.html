@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        
+
+        //timing function
+        setTimeOut()
+        setInterval()
+        clearTimeout()
+        clearInterval()
+
+        //event loop mechanism
+
+        callstack
+
+
+
+        webapi
+
+
+        micro task que
+        macro task que
+
+
+        event loop
+
+        */
+
+        // console.log("first")
+        // setTimeout(function(){
+        //     console.log("second")
+        // },5000)
+        // console.log("third")
+
+
+        /*
+        callbacks
+        when a function defintion is passed to another function as an 
+        argument
+        and executes later on the outer function 
+
+        
+        */ 
+
+        // function one(a){
+        //     console.log("one")
+        //     a()
+        // }
+
+        // function two(b){
+        //     console.log("two")
+        //     b()
+        // }
+
+        // function three(){
+        //     console.log("three")
+        // }
+
+
+        // one(()=>{
+        //     two(()=>{
+        //         three()
+        //     })
+        // })
+
+
+        // function html(callback){
+        //     console.log("learning html")
+        //     callback()
+        // }
+        // function css(callback){
+        //     setTimeout(()=>{
+        //         console.log("learning css")
+        //         callback()
+        //     },5000)
+            
+        // }
+        // function js(){
+        //     console.log("learning js")
+        // }
+
+
+        // html(()=>{
+        //     css(()=>{
+        //         js()
+        //     })
+        // })
+
+        function sum(val,callback){
+            callback(val+10)
+        }
+        function sub(val,callback){
+            callback(val-5)
+        }
+        function mul(val,callback){
+            callback(val*2)
+        }
+        function div(val,callback){
+            callback(val/2)
+        }
+
+        sum(10, (addres)=>{
+            sub(addres,(subres)=>{
+                mul(subres, (mulres)=>{
+                    div(mulres,(divres)=>{
+                        console.log(divres)
+                    })
+                })
+            })
+        })
+
+    </script>
+</body>
+</html>
