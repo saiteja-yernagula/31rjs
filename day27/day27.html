@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+
+        to overcome callback hell
+        
+        promises
+
+        it represents the eventula completion or failure
+        of an async operation
+
+        promise have three states
+        resolved
+        pending
+        rejected
+
+        creating a promise
+        a=new Promise((res,rej)=>{
+        res()
+        rej()
+        })
+
+        consuming a promise
+        1. then catch- error handling but the problem is promise chaining
+        2. async await- try catch -error handling methods- code readability improved
+
+       
+        */ 
+
+        // function sum(val){
+        //     return new Promise((res)=>{
+        //         res(val+10)
+        //     })
+        // }
+
+
+        // function sub(val){
+        //     return new Promise((res)=>{
+        //         res(val-5)
+        //     })
+        // }
+
+        // function mul(val){
+        //     return new Promise((res)=>{
+        //         res(val*2)
+        //     })
+        // }
+
+        // function div(val){
+        //     return new Promise((res)=>{
+        //         res(val/2)
+        //     })
+        // }
+
+        // async function getdata(){
+        //     let a=await sum(10)
+        //     let b=await sub(a)
+        //     let c=await mul(b)
+        //     let d=await div(c)
+        //     console.log(d)
+        // }
+        // getdata()
+   
+
+        // let a = new Promise((res) => {
+        //     setTimeout(() => {
+        //         res("first")
+        //     }, 2000)
+        // })
+
+
+
+        // let b = new Promise((res) => {
+        //     setTimeout(() => {
+        //         res("second")
+        //     }, 8000)
+
+        // })
+
+
+        // let c = new Promise((res) => {
+        //     setTimeout(() => {
+        //         res("third")
+        //     }, 1000)
+        // })
+
+
+        // async function getdetails(){
+        //     let first = await a
+        //     let second=await b
+        //     let third=await c
+        //     console.log(first)
+        //     console.log(second)
+        //     console.log(third)
+        // }
+        // getdetails()
+
+        // how to fetch a data from server using then catch
+        
+
+        // let a=fetch("https://fakestoreapi.com/products/")
+
+        // a.then((res)=>res.json())
+        // .then((val)=>{
+        //     console.log(val)
+        // })
+
+    //     async function executor() {
+    //     try {
+    //       var res = await fetch("https://storeapi.com/products/1");
+    //       var data = await res.json();
+    //       console.log(data);
+    //     } catch (err) {
+    //       console.log("data not loading");
+    //     }
+    //   }
+    //   executor();
+
+
+      
+
+
+
+
+    </script>
+</body>
+
+</html>
