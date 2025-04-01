@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button >click</button>
+    <script>
+        /*
+
+         
+        json server
+
+        api - application programming interface
+
+        // error handling methods
+        try catch finally
+        
+        */
+
+        // console.log('first')
+       
+        
+        // try{
+        //     console.log('second')
+        // }catch(error){
+        //     console.log(error)
+        // }finally{
+        //     console.log('will execute irrespective of the outcome')
+        // }
+        
+        // console.log('third')
+
+        // let num=+prompt("enter a number")
+
+        // try{
+        //     if(num<10){
+        //     throw new Error("number is less than 10")
+        // }
+        // }catch(e){
+        //     console.error(e)
+        // }
+        
+
+        // console.log("last")
+
+
+        // if(10==10{
+        //     console.log("true")
+        // }
+
+
+    // a=new Array(-1)
+    //     console.log(a)
+
+    // console.log(eval("alert('hi')"))
+    // eval("alert('Hello’)");
+
+    /*
+    
+    api
+    types of api
+    
+    error handling methods
+    types of errors
+    
+    
+    this 
+    it represets current calling object
+
+    in global
+    this represents window
+
+    in functions
+    window
+
+    in object method
+    represent current obj
+    in arrow func this represent window
+
+    event listener
+    element
+
+    methods to manipulate this
+    call
+    apply
+    bind
+
+
+    */ 
+
+    // let obj={
+    //     name:"john",
+    //     age:30,
+    //     sayHello:()=>{
+    //         console.log(this.name)
+    //     }
+    // }
+
+    // obj.sayHello()
+   
+
+//    function fun(){
+//     console.log(this)
+//    }
+//    fun()
+
+//     console.log(this.document)
+
+
+        // let btn=document.querySelector("button")
+        // btn.addEventListener("click",function(){
+        //     console.log(this)
+        //     this.style.color="red";
+        //     this.innerText="clicked"
+        // })
+
+        // let obj={
+        //     name:"john",
+        //     age:30
+        // }
+
+        
+        // let obj1={
+        //     name:"jessy",
+        //     age:25
+        // }
+
+        function fun(data,a){
+            console.log(this.age,this.name,data,a)
+        }
+        fun()
+        fun.apply(obj,["vizag", "andhra"])
+        fun.call(obj1,"hyd","telangana")
+
+        let a=fun.bind(obj)
+        a("vizag","andhra")
+
+        // old way to create object -using constructor function
+        function Person(a,b){
+            this.name=a
+            this.age=b
+        }
+
+        let obj=new Person("john",25)
+        console.log(obj)
+
+        let obj1=new Person("jessy", 22)
+        console.log(obj1)
+    </script>
+    
+</body>
+</html>
