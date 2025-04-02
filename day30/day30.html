@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        error handling methods
+        types of errors
+        this keyword
+        methods to manipulate this
+        old way to create object- constructor function
+
+        constructor func
+
+        function Person(params){
+        this.name=param
+
+        }
+
+        let obj1=new Person("arguments")
+        
+        */
+
+
+        // function Person(a,b){
+        //     this.name = a;
+        //     this.age=b
+        // }
+
+        // let person1=new Person("john", 23)
+
+        // let person2=new Person("jessy", 20)
+        
+        // Person.prototype.city="hyd"
+        // console.log(person1.city);
+        // console.log(person2.city);
+
+
+        /*
+        
+        
+        oops
+        object oriented programming structure
+        its way of writing code in more modular and reusable manner
+
+        class
+        class is used to create template for creating objects
+        class have properties(state) and methods (behaviour)
+        introduces in es6
+
+        syntax
+
+        class Classname{
+        //properties and methods
+        property1;
+        property2;
+
+        constructor(params){
+        this.property1=param1
+        this.property2=param2
+        }
+
+        methodname(){
+        console.log(this.property1,this.property2)
+        }
+        }
+
+
+        instance of class - create an object
+        let obj1=new Classname(arguments)
+
+
+        object
+        constructor
+        encapsulation
+        inheritance
+        polymorphism
+        abstraction
+        
+        */ 
+
+
+        class Marker{//template for creating an objects
+            color;
+            type;
+            lid;
+            constructor(a,b,c){//to initiliaze the properties
+                this.color=a
+                this.type=b
+                this.lid=c
+            }
+
+            write(){
+                console.log("writing with " +this.color+" marker and type is",this.type)
+            }
+           markerlid(){
+                console.log("lid type is "+this.type)
+            }
+        }
+
+        //creating an object
+        let marker1=new Marker("red", "perm", "square")
+        console.log(marker1)
+        marker1.write()
+        marker1.markerlid()
+
+        let marker2=new Marker("blue", "temp","circle")
+        console.log(marker2)
+        marker2.write()
+        marker2.markerlid()
+
+
+        /*
+        
+        pending works
+        seminar topics - sheet 
+        own server- json server - how to deploy- render
+        firebase firestore 
+        cloudinary
+        glitch 
+        
+        js third party -leaflet,swiper
+
+        api testing - postman
+        rapid api or github apis
+
+        */ 
+
+        </script>
+</body>
+</html>
