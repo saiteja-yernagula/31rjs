@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    oops- object oriented programming structure
+    class-  properties and methods
+    constructor- initiliaze the values
+    object- instance of class
+    encapsulation
+    inheritance
+    polymorphism
+    abstraction
+    
+    
+    */  
+
+
+    // class Person{
+    //     name
+    //     #age
+    //     #salary
+
+    //     constructor(name,age,salary){
+    //         this.name=name
+    //         this.#age=age
+    //         this.#salary=salary
+    //     }
+
+    //     details(){
+    //         console.log(`Name: ${this.name} and the salary is ${this.#salary}`)
+    //     }
+
+    //     get personsal(){
+    //         return this.#salary
+    //     }
+
+    //     get personage(){
+    //         return this.#age
+    //     }
+
+    //     set newsal(a){
+    //         this.#salary+=a
+    //     }
+
+
+    // }
+
+
+    // let person1=new Person("vinneth", 23,50000)
+    // person1.name="vineeth kumar"
+    // person1.newsal=100000//can do this because of setter method
+   
+    // console.log(person1.salary)//access denied
+    // console.log(person1.age)//access denied
+    // console.log(person1.name)
+    // console.log(person1.personsal)//accessibe due to getter
+    // console.log(person1)//accessibe due to getter
+
+    class Animal{
+        height
+        weight
+        voice
+
+        constructor(height,weight,voice){
+            this.height=height
+            this.weight=weight
+            this.voice=voice
+        }
+
+        details(){
+            return ` super class This dog is ${this.height}m tall, weighs ${this.weight}kg `
+        }
+
+
+
+
+    }
+
+ 
+    let animal1=new Animal(5,10,"roar")
+
+    class Dog extends Animal{
+        type
+        food
+        constructor(height,weight,voice,type,food){
+          super(height,weight,voice)
+         
+          this.type=type;
+          this.food=food;
+        }
+
+        details(){
+            return `sub class This dog is ${this.height}m tall, weighs ${this.weight}kg `
+        }
+
+    }
+
+    let dog1=new Dog("3feet", 10,"bark","husky","chicken")
+    console.log(dog1)
+    let dog2=new Dog("5", 50,"bark", "pitbull", "high protien food")
+    console.log(dog2)
+
+    console.log(animal1.details())
+    console.log(dog1.details())
+
+
+    
+
+    
+    </script>
+</body>
+</html>
